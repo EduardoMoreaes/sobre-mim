@@ -74,8 +74,7 @@ background-color: transparent;
     border: 2px;
     border-color: blueviolet;
     border-style: ridge;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
+    border-radius: 35px;
     background-image: linear-gradient(to top, cyan, blue);
     width: 380px;
     height: 550px;
@@ -182,7 +181,7 @@ background-color: transparent;
 }
 #description, #images{
     border-color: transparent;
-    width: auto;
+    max-width: 50%;
 }
 #description{
     max-width: 500px;
