@@ -156,7 +156,8 @@ background-color: transparent;
     height: 50px;
 }
 .project{
-    height:300px;
+    max-width: 75%;
+    width: auto;
 }
 .projects{
     font-size: 70px;
@@ -181,7 +182,10 @@ background-color: transparent;
 }
 #description, #images{
     border-color: transparent;
+    width: auto;
 }
 #description{
-    width: 38%;
+    max-width: 500px;
+    min-width: 100px;
+    margin-bottom: 10%;
 }
