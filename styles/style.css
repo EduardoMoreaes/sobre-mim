@@ -55,16 +55,13 @@ html, body{
 }
 .son{
     border: 5px;
-    border-color: grey;
+    border-color: transparent;
     border-style: ridge;
     width: auto;
     height: 400px;
     text-align: center;
     text-align: center;
     padding: 5px;
-}
-#son_non-border{
-    border-color: transparent;
 }
 .mensages{
     height: 85%;
@@ -81,7 +78,7 @@ background-color: transparent;
     border-top-right-radius: 35px;
     background-image: linear-gradient(to top, cyan, blue);
     width: 380px;
-    height: 600px;
+    height: 550px;
 }
 .me{
     border: 2px;
@@ -157,4 +154,34 @@ background-color: transparent;
 .tecnology{
     width: 50px;
     height: 50px;
+}
+.project{
+    height:300px;
+}
+.projects{
+    font-size: 70px;
+}
+#title_projects{
+    border-left: 0px;
+    border-right: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: auto;
+    width: 95%;
+    border-color: blue;
+}
+.title_project{
+    font-size: 50px;
+}
+.text_project{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+#description, #images{
+    border-color: transparent;
+}
+#description{
+    width: 38%;
 }
