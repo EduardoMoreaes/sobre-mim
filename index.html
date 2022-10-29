@@ -5,42 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo L. Moraes</title>
-
-    <style>
-        div{
-            align-items: center;
-            text-align: center;
-        }
-        h1{
-            color: red;
-        }
-        
-        a{
-            color: black;
-            font-style: oblique;
-            font-size: large;
-            text-decoration: none;
-            display: inline-block;
-            font-display: initial;
-        }
-        img{
-            display: inline-block;
-            width: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/reset.css" media="screen">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./Script/002_page.js"></script>
 </head>
 <body>
-    <div>
-        <h1>OPS!!!</h1>
-        <p>Parece que chegaste cedo amigo.</p>
-        <p>O portifólio tá preso no engarrafamento.</p>
-        <p>Porque não volta mais tarde?</p>
-        <p>Aproveite para dar uma olhada neste projeto!</p>
-        <a href="https://eduardomoreaes.github.io/geomidia/"><img src="https://thumbs.dreamstime.com/b/s%C3%ADmbolo-logo-design-do-%C3%ADcone-computador-de-secret%C3%A1ria-118320008.jpg" alt="">App</a>
-        <br>
-        <a href="https://eduardomoreaes.github.io/geomidia/"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">GitHub</a>
-        <br>
-        <iframe width="500px" height="500px" scrolling="no" frameborder="no" src = "https://eduardomoreaes.github.io/geomidia/"></iframe>
+    <header class="header_main">
+        <div class="hello_world" id="h1">
+        </div>
+        <div class="whriting"></div>
+    </header>
+    <div class="bottom_header"></div>
+    <div class="body">
+        <div class="father">
+            <div class="son">
+                <img src="" alt="" srcset="">
+                <h1>PROFILE</h1>
+            </div>
+            <div class="son" id="son_speaking">
+                <div>
+                    <h1 class="top_mensages">Conheça</h1>
+                </div>
+                <div class="mensages">
+                    <div id="mensages"></div>
+                </div>
+                <div class="buttons_send" id="buttons_send_mensage">
+                    <input type="button" value="Olá, qual o seu nome?" id="option" onClick="send_msg1()">
+                </div>
+            </div>
+        </div>
+        <div class="father">
+            <div class="son">
+                <a href="https://geomidia.vercel.app"><img src="" alt=""></a>
+            </div>
+        </div>
     </div>
 </body>
+<script src="./Script/001_page.js">
+</script>
 </html>
