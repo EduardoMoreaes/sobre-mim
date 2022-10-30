@@ -7,7 +7,8 @@
     <title>Eduardo L. Moraes</title>
     <link rel="stylesheet" href="./styles/reset.css" media="screen">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./Script/002_page.js"></script>
+    <script type="module" src="./Script/003_page.js" ></script>
+    <script type="module" src="./Script/002_page.js"></script>
 </head>
 <body>
     <header class="header_main">
@@ -24,8 +25,11 @@
                 </div>
             </div>
             <div class="son">
-                <img src="" alt="" srcset="">
-                <h1>PROFILE</h1>
+                <img src="https://github.com/EduardoMoreaes/sobre-mim/blob/master/images/Dev.jpeg?raw=true" class="profile">
+                <br>
+                <h1>Eduardo L. Moraes</h1>
+                <br>
+                <div class="status">status: <div class="online"></div>online</div>
             </div>
             <div class="son" id="son_speaking">
                 <div>
@@ -44,7 +48,10 @@
                 <h1 class="projects">Projetos</h1>
             </div>
         </div>
-        <div class="father">
+        <div class="father" id="all_projects">
+            <div class="son" id="mover">
+                <input type="button" class="move" id="left" value="<" onclick="moving(2)"></input>
+            </div>
             <div class="son" id="description">
                 <h1 class="title_project">GEOMÍDIA</h1> <br>
                 <p class="text_project">O Geomídia foi projetado para auxiliar alunos do ensino médio no estudo, voltado para o conteúdo sobre geopolítica global. Na forma de resumos de artigos científicos, portanto de fácil compreensão, com mapas e gráficos interativos gerados com dados oficiais.</p>
@@ -53,7 +60,20 @@
                 <a href="https://geomidia.vercel.app"><img src="https://github.com/EduardoMoreaes/sobre-mim/blob/master/images/geomidia.vercel.app.png?raw=true" class="project"></a>
                 <br><a href="https://github.com/EduardoMoreaes/geomidia" class="github"> <img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" alt="" class="github">Github </a>
             </div>
+            <div class="son" id="mover">
+                <input type="button" class="move" id="right" value=">" onclick="moving(1)"></input>
+            </div>
         </div>
+    </div>
+    <div class="google_visible">
+        <p>JavaScript</p>
+        <p>HTML5</p>
+        <p>PostegreeSQL</p>
+        <p>CSS3</p>
+        <p>R</p>
+        <p>Desenvolvedor</p>
+        <p>NodeJS</p>
+        <p>TypeScript</p>
     </div>
 </body>
 <script src="./Script/001_page.js">

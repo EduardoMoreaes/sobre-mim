@@ -194,3 +194,49 @@ background-color: transparent;
     color: blueviolet;
     text-decoration: none;
 }
+.profile{
+    width: 200px;
+    border-style: ridge;
+    border-width: 2px;
+    border-radius: 80%;
+    border-color: darkred;
+}
+.google_visible{
+    color: transparent;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    overflow-y: hidden;
+}
+.status{
+    font-size: x-large;
+    display: flex;
+}
+.online{
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 80%;
+    border-color: greenyellow;
+    border-style: ridge;
+    border-width: 3px;
+    animation: online 1s infinite;
+}
+@keyframes online {
+    0%{
+        background-color: lightgreen;
+    }
+    50%{
+    }
+    100%{
+        background-color: green;
+    }
+}
+.move{
+    font-size: 50px;
+    font-style: oblique;
+    position: absolute;
+    color: red;
+    background-color: rgba(34, 34, 34, 0.534);
+    border-radius: 100%;
+}

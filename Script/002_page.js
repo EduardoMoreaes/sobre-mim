@@ -1,3 +1,4 @@
+import projetos from "./003_page.js";
 var msg = 0;
 
 async function send_msg1(){
@@ -42,7 +43,7 @@ async function send_msg1(){
     else if (msg == 5){
         document.getElementById('mensages').innerHTML += "<p class='visitor'>Quais tecnologias tu conhece?</p>";
         await timer(1);
-        document.getElementById('mensages').innerHTML += "<p class='me'>As que eu conheço são essas: <br> <img src='https://96renato96.files.wordpress.com/2014/10/javascript-logo-png1.png' class='tecnology'> <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png' class='tecnology'> <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/800px-R_logo.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png' class='tecnology'></p>";
+        document.getElementById('mensages').innerHTML += "<p class='me'>As que eu mais domino são essas: <br> <img src='https://96renato96.files.wordpress.com/2014/10/javascript-logo-png1.png' class='tecnology'> <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png' class='tecnology'> <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/800px-R_logo.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png' class='tecnology'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png' class='tecnology'></p>";
         document.getElementById('buttons_send_mensage').innerHTML = '<input type="button" value="Contato" id="option" onClick="send_msg1()">'
         msg++;
     }
@@ -59,4 +60,14 @@ async function send_msg1(){
 async function timer(seconds){
     let time = seconds * 1000;
     return new Promise(res => setTimeout(res, time));
+}
+
+
+function moving(i) {
+    if(i == 1){
+        document.getElementById('all_projects').innerHTML = projetos.geomidia
+        console.log('right')
+    }else if(i==2){
+        console.log('left')
+    }
 }
