@@ -1,4 +1,3 @@
-import projetos from "./003_page.js";
 var msg = 0;
 
 async function send_msg1(){
@@ -63,11 +62,3 @@ async function timer(seconds){
 }
 
 
-function moving(i) {
-    if(i == 1){
-        document.getElementById('all_projects').innerHTML = projetos.geomidia
-        console.log('right')
-    }else if(i==2){
-        console.log('left')
-    }
-}

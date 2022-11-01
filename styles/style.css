@@ -155,8 +155,7 @@ background-color: transparent;
     height: 50px;
 }
 .project{
-    max-width: 75%;
-    width: auto;
+    max-width: 65%;
 }
 .projects{
     font-size: 70px;
@@ -181,7 +180,21 @@ background-color: transparent;
 }
 #description, #images{
     border-color: transparent;
-    max-width: 50%;
+    margin-top: 100px;
+}
+#description::after, #images::after{
+    border-top: 1px solid blueviolet;
+    border-left: 1px solid blueviolet;
+    border-bottom: 1px solid blueviolet;
+    border-right: 1px solid blueviolet;
+    transform: scale(10px);
+}
+#description::before, #images::before{
+}
+#images{
+    max-width: 500px;
+    min-width: 100px;
+    padding: 0;
 }
 #description{
     max-width: 500px;
@@ -236,7 +249,93 @@ background-color: transparent;
     font-size: 50px;
     font-style: oblique;
     position: absolute;
-    color: red;
-    background-color: rgba(34, 34, 34, 0.534);
-    border-radius: 100%;
+    color: rgb(114, 114, 114);
+    border-color: transparent;
+    background-color: transparent;
+    height: 81.7%;
+    width: 5%;
+    margin-top: -5px;
+}
+.move:hover{
+    background-color: rgba(255, 19, 19, 0.185);
+    border-color: transparent;
+}
+#mover{
+    height: 100%;
+    width: 5%;
+    padding: 0%;
+    margin: 0%;
+}
+#right{
+    margin-left: -3.5%;
+}
+#left{
+    margin-left: -3%;
+}
+#left, #right{
+    width: 100px;
+    height: 106.5%;
+}
+#all_projects{
+    background-image: linear-gradient(45deg, rgb(145, 99, 13),black, rgb(148, 23, 23));
+    margin-left: -1%;
+    width: 102%;
+    padding: 0;
+    justify-content: space-between;
+    margin-top: -43px;
+}
+
+
+#images:hover{
+    animation: 1s ani_img forwards;
+}
+#description:hover{
+    animation: 1.5s ani_des forwards;
+    transition: 5s ease-in-out;
+}
+@keyframes ani_img {
+    0%{
+        border-top: 5px solid white;
+    }
+    25%{
+        border-left: 5px solid white;
+    }
+    50%{
+        border-bottom: 5px solid white;
+    }
+    75%{
+        border-right: 5px solid white;
+    }
+    100%{
+        max-width: 49%;
+        padding-top: 150px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-color: white;
+    }
+}
+@keyframes ani_des {
+    0%{
+        border-top: 5px solid white;
+    }
+    25%{
+        border-left: 5px solid white;
+    }
+    50%{
+        border-bottom: 5px solid white;
+    }
+    75%{
+        border-right: 5px solid white;
+    }
+    100%{
+        max-width: 49%;
+        padding-top: 150px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-color: white;
+    }
 }
