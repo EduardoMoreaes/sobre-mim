@@ -50,7 +50,7 @@
         </div>
         <div class="father" id="all_projects">
             <div class="son" id="mover">
-                <input type="button" class="move" id="left" value="<"></input>
+                <input type="button" class="move" id="left" onclick="move(1)" value="<"></input>
             </div>
             <div class="son" id="description">
                 <h1 class="title_project">GEOMÍDIA</h1> <br>
@@ -61,9 +61,10 @@
                 <br><a href="https://github.com/EduardoMoreaes/geomidia" class="github"> <img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" alt="" class="github">Github </a>
             </div>
             <div class="son" id="mover">
-                <input type="button" class="move" id="right" value=">"></input>
+                <input type="button" class="move" id="right" onclick="move(2)" value=">"></input>
             </div>
         </div>
+    </div>
     </div>
     <div class="google_visible">
         <p>JavaScript</p>
@@ -76,6 +77,6 @@
         <p>TypeScript</p>
     </div>
 </body>
-<script src="./Script/001_page.js">
-</script>
+<script src="./Script/001_page.js"></script>
+<script src="./Script/bootstrap.js"></script>
 </html>

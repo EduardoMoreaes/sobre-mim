@@ -1,4 +1,8 @@
 var msg = 0;
+var i = 0;
+const geomidia = '<div class="son" id="mover"><input type="button" class="move" id="left" onclick="move(1)" value="<"></input></div><div class="son" id="description"><h1 class="title_project">SEM PROJETO</h1><br><p class="text_project">Ainda não há muitos projetos no nosso banco, caso tenha um em mente, contate-me para negociarmos um acordo para desenvolver</p></div><div class="son" id="mover"><input type="button" class="move" id="right" onclick="move(2)" value=">"></input></div></div>' 
+const no_proje = '<div class="son" id="mover"><input type="button" class="move" id="left" onclick="move(1)" value="<"></input></div><div class="son" id="description"><h1 class="title_project">GEOMÍDIA</h1> <br><p class="text_project">O Geomídia foi projetado para auxiliar alunos do ensino médio no estudo, voltado para o conteúdo sobre geopolítica global. Na forma de resumos de artigos científicos, portanto de fácil compreensão, com mapas e gráficos interativos gerados com dados oficiais.</p></div><div class="son" id="images"><a href="https://geomidia.vercel.app"><img src="https://github.com/EduardoMoreaes/sobre-mim/blob/master/images/geomidia.vercel.app.png?raw=true" class="project"></a><br><a href="https://github.com/EduardoMoreaes/geomidia" class="github"> <img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" alt="" class="github">Github </a></div><div class="son" id="mover"><input type="button" class="move" id="right" onclick="move(2)" value=">"></input></div></div>  ' 
+const projeto = [geomidia, no_proje];
 
 async function send_msg1(){
     if (msg == 0){
@@ -62,3 +66,25 @@ async function timer(seconds){
 }
 
 
+function move(direction){
+    if (direction === 2) {
+        document.getElementById("all_projects").innerHTML = ''
+        document.getElementById("all_projects").innerHTML = projeto[i]
+        console.log('moveu pra direita')
+        console.log(i)
+        i++;
+        if (i >= projeto.length) {
+            i=0;
+        }
+    }
+    else if(direction === 1){
+        document.getElementById("all_projects").innerHTML = ''
+        document.getElementById("all_projects").innerHTML = projeto[i]
+        console.log('moveu pra esquerda')
+        console.log(i)
+        i--;
+        if (i < 0) {
+            i = projeto.length-1;
+        }
+    }
+}
