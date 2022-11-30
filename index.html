@@ -5,78 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo L. Moraes</title>
-    <link rel="stylesheet" href="./styles/reset.css" media="screen">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./Script/003_page.js"></script>
-    <script src="./Script/002_page.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style-primary-div.css">
+    <link rel="stylesheet" href="./styles/style-two-div.css">
+    <link rel="stylesheet" href="./styles/style-three-div.css">
+    <link rel="stylesheet" href="./styles/style-four-div.css">
+    <script src="./Script/canva_functions.js" type="application/javascript"></script>
+    <script src="./Script/transition.js"></script>
+    <script src="./Script/events.js"></script>
+    <script src="./Script/contacts.js"></script>
 </head>
-<body>
-    <header class="header_main">
-        <div class="hello_world" id="h1">
+<body onload="draw(); load_project(0); addEvent();" style="background-color: rgb(2, 2, 31); color: whitesmoke;" id="body">
+    <div class="primary_part_div">
+        <h1 id="name-primary_part">Eduardo <br> Moraes</h1>
+    </div>
+    <div class="two_part_div">
+        
+        <div class="title_programer-two_part">
+            <h1 id="title_programer">SELECIONE SEU PROGRAMADOR</h1>
         </div>
-        <div class="whriting"></div>
-    </header>
-    <div class="bottom_header"></div>
-    <div class="body">
-        <div class="father">
-            <div class="father">
-                <div class="son" id="title_projects">
-                    <h1 class="projects">Perfil</h1>
-                </div>
-            </div>
-            <div class="son">
-                <img src="https://github.com/EduardoMoreaes/sobre-mim/blob/master/images/Dev.jpeg?raw=true" class="profile">
-                <br>
-                <h1>Eduardo L. Moraes</h1>
-                <br>
-                <div class="status">status: <div class="online"></div>online</div>
-            </div>
-            <div class="son" id="son_speaking">
-                <div>
-                    <h1 class="top_mensages">Conheça-me</h1>
-                </div>
-                <div class="mensages">
-                    <div id="mensages"></div>
-                </div>
-                <div class="buttons_send" id="buttons_send_mensage">
-                    <input type="button" value="Olá, qual o seu nome?" id="option" onClick="send_msg1()">
-                </div>
-            </div>
+        <div class="history_programer-two_part">
+            <table>
+                <tr><h1 class="title_text_programer"> história </h1></tr>
+                <tr><p class="text_programer">Comecei na programação aos 15 anos, ao entrar no IFSul, nas férias de entrada já produzi dois jogos básicos em HTML e JavaScript, no primeiro semestre desenvolvi um site, onde resolvi criar mais um jogo e começar com o pé direito, mostrando a todos que não entrei lá para brincar. No decorrer dos anos, continuei sendo aluno exemplar na parte técnica, superando expectativas e sempre me dispondo a ajudar quando necessário.</p></tr>
+            </table>
         </div>
-        <div class="father">
-            <div class="son" id="title_projects">
-                <h1 class="projects">Projetos</h1>
-            </div>
+        <div class="programer-two_part"></div>
+        <div class="languages_programer-two_part">
+            <h1 class="title_text_programer" id="linguages">linguagens</h1>
+            <table style="margin-left: 35%;">
+                <tr>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 25px; height: 25px; background-size: 25px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAAclBMVEX33x4AAAD/6R/lzhxyZg4mIgX85B//5x+CdRD64R7u1x3/6yD/7yAYFgM9NwhfVgspJQVNRQndyBvPuxnWwho3MgdoXg3CsRjIthiPghEeGwS9qxe1pBajkxQwKwYTEQOsmxWaixNEPQh6bQ5VTgqJfBEdrUiUAAADoklEQVRoge2Za3PqIBCGuSgIiTdytcY20fb//8UmVg0QwETJmTkzvB+cMRIeFnZhWQEICgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgp6UexPM/RM0UPUSEaUizRJkhQDRD2PgNaX1V0/fPgzSA/7bA07Lc/bWjDik44W8KE11kwjrN5DVXni036ZvtToKFnCoXLuz3wHnR4M7E4Fmp/OFhY4hJUvvJWOVlZ4a70xPPzRaeWAQ8j9uJ6NzpxwuPdjvIVOftx02HhxfJvtXyosu+04d+0KL1NvppNCRi1PmHOeSm64An5i3kynssNvMGLdSYPEzf6snDnithId3+0k/Pr94MlwK51n/dNt/GhMUgjP2NtOZ6Ez/NE/baTgQocT8XnITqMDf5NupwO+658uIq/AMfSN5HUe13kcnck+n6M5MjoHXYn3Np/wdKSNpJOjTIdZBebh2/Z5qOpcAa+h5qaTi4aHHw2PvPMtdMZ1erf+SeQ33K0zj4wp5b6YL59X8jp2NuFbvs/1t9Plk0aZf/Ev8nmCd2Y8bLxtP47bBFF2PFkbX9cZ100KoJMFDz3NvpMOqMgt+HTWnPYmRhP9Fntr6+U+8YTe8qPEaH/uY+d/Su/4vPka4isPcz+C3vINZQT46cH4UXTQlVDKbw1fvr/yY+lt+JNSLWX8vG/8eHrHVwoKu9jZ2jcdgEjJuN5PN1304VgY/5ToTwdrkvKOq2qEh+8q6WY6nc6IwoikrWQn/0LYqT3MBnR5508mRzzi+U7+Hkv3hqyvVbK46I53rPf/Fp2Qpn3rIN+NpBvbuR+j+AvutX6UUtnrxaSZZ7TItEGTUurt+zbRlD+qNmes3iGF7PNT2K0X3Qf+dTeJRfIGurrRa8mxs1KqyxKu7HcT4p0xacl2KbkKKPF7vI5Ju8fAC28bMsbaz1K+XMLFhHjn6jGR10lyPKiZ283lIz2f2zZFKtJjox00xwlOZ6359gO6L4d41vKq9bRoN5W7ZZV3W1Azhn6adMgo7m3Qvp/I4S3O0HyS5e16uqufUvQyYMule01OK9HC0Vsjb0GMPMMfpx/u1F5zX2m1obhxwstXMgtSW3obuhBN9Uyq1168ltZQYerznBh6I6DaGNq26eTp5aodI4W+pJvKcimnrNgOUumsfquGRCJcLR4nW16njoIEiXjR9LP1eanE2+ULRlAcAYwxRzF6VgxgJIoRx0JgED9vPX4ME/7XnetP4KCgoP9Pv/ZMKoHMulrqAAAAAElFTkSuQmCC);">JavaScript</td>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 50px; height: 25px; background-size: 50px; background-image: url(data:image/png;base64,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); background-repeat: no-repeat;">NodeJS</td>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 25px; height: 25px; background-size: 50px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAABxCAMAAABMdKcSAAAAyVBMVEXxZyvzdkblUCf////s7e7ybzkAAADtaDsGCAgABQftXir/fEnpVygAAAPlSx/pPgDxYyPnemTxXxjximfwhV/dbEDzpo9uNiBgLxwpFQ3s+fzlRQ+vVTLlQADs9PbpmoqCQCfwgFbvUAAbDgvoWS/wWQDmaU/ngm71r5rpcUPTZj1YKxojEg3qysTmb1TmYULq1dLr4uGbTC7DXzk7HRJJJBWORSnrhWnpurH57+zoqZ763tXye0/oi3npsqnokYLylnj5yrz5v67FOAJ5AAAEwUlEQVR4nO2ZbVPiOhSAqdfNkrZUQLHIS0URWYpaAfGCqID//0dtkqZpaVrLOGFI7s3zYcts6vQ8nCTnNJSM/w6lYwcgEO0iJ9pFTrSLnGgXOdEucqJd5ES75GJZFrtYjHggHhL7XIJYl06vN0WXEbqMjGkvYmbNXBcPGJb/6vbIUEPogwliXVwAgG9YU3TpjF5ARM8Ygwp4GRkWvqHf8CEATfGZEe0CQcOwOqCMXOaVcgh4NZroM+hZPoBleNVoPMCKAi5YYtTDF2MOALZBGQldYMXHepGL0AcThLvAq/m8DJGL5c8aKHYw9f0RcSnDPs6SQi7o66/AMs4LWuk4QWSRIxeIphf5B7n0FXTBc87HAzgvL8jn4QFGLgqsF3g1HvdhIi/UBV75fQg6+AOZY3MfIXZjFu5SQRJTkOHygLZq1xpTFzTf+v0+HIl8uvg92ad7spF2QcMjg7mgpQMhkNiliTbgGXapAFzmkUuFuqDtmcSNiiaqlRWKzC4d13UN3MO4LlkKjWbTJeHO3GYPX63ZuPlKxgkdoU8X62Ile8vMD9Zu2yn06brnlxPtksHvnyMqBFEuv09+jigZYXnRLnK63P1vXMxsbAVd7FIOZFRUCBK43IkKQVx9+YmLqV1y0C5ZxJE7PFUO4kL2Mel6mISL81TbYVgb/nvOEedFZpf2Kc8/HBdVFfLS9fZxuZHZhRWY7mQfF4O5CIvgEC7P+7jUhZf9g7g88pOMdxnI7MIKTHuxh8uSuQgrLwdxeaMurRjOZaWGi3MdurSegnvEE+b8IuIG835Blr7Ysn8Qlw/qcldU98WWyoO4DOkUqzkF/Zi0LqxYOrWwwLTW7QIXsaXSKP0SBnO5D128t+4+LqawAHKa8Z/AXALq8lnkQsZMgSEIgzVkd7TwL87aEfUU1fgv5HZxqMtkvb6m/MFcxmzivzhu0DnYcROTqvqex5V9Ul9UdOF7mFXcWh477ExM5vLJNWSZLYypgEv7utBly1xyj86OSuzy0Spy+ZLcJS4wtUKXS7xelHAJ0i7cPrbBLra05SVZYM5S3EZcUpf4FEZ2F45oItU31CU+uThmwN8Qx+6EnQvX89ejvJDyIrMLK5ZOLexc2AsMc/miLrfs/iPG+x2Jwk8KjDdpp122SRd5S2XCJTqJ4V1WtB1jLpJuyYliSU9iWnkuK9lLZcJlzU4vUi5LNVqYhAs7iRl2d1yqg6iFkb3sJ1xqtN4/D7tn7TDian0wuIm2sT/MRdJSmWzI4qP+x3WAyk29ZGy2y7gdk73sJ1zuEz9btLznxdvXarcdU8gl2P0JhntHPmdvyNK7nATpn5N2VZYXcr/tY+Im5tHzvnN5V8klWDyjhZLtstqS5aKKC9q5Tu4/FqfeqZdyWW3ef9VJlyx1C5MoMEQHvZHV3h4nJD1kZq2+NoNbemRZUsolTI8TDD8naB9bbjfvpUE9fbNCLsSnexacl24H1WrGzfK65L0lO07GvXK3MPlv/Blfvyl32d/fxbTplqe4i2knBo4WaTF2kYuduuOYwRZg5sjY2YO2xFMMY6a/+jBo/n9lF6Fk+iQ1FPGgmHnTDeVDKREK76NYQlKYpuIJSYGWj9L50Gg0Go1Go9FoVOYvkgKtmggsA5cAAAAASUVORK5CYII=); background-position-x: 50%;">HTML5</td>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 25px; height: 25px; background-size: 50px; background-image: url(data:image/jpeg;base64,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); background-position-x: 50%;">CSS3</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 25px; height: 25px; background-size: 25px; background-image: url(data:image/png;base64,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);">PostgreSQL</td>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 25px; height: 25px; background-size: 25px; background-image: url(data:image/png;base64,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); background-repeat: no-repeat; background-position-x: 50%;">Git</td>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 25px; height: 25px; background-size: 25px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQafzHKB2hIU_qf9gIjaAe0up8aKs-1Ia2rAHRldihg2uNWH5k740ucEeDxzYpJzuB9A0&usqp=CAU); background-repeat: no-repeat; background-position-x: 50%;">R</td>
+                    <td style="border: 2px ridge rgba(0, 0, 0, 0); font-size: 0; width: 25px; height: 25px; background-size: 50px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIz2hyRVRjKs6SU9_4OypxIK_XYJkbQbGH5Q&usqp=CAU); background-repeat: no-repeat; background-position-x: 50%;">C++</td>
+                </tr>
+            </table>
         </div>
-        <div class="father" id="all_projects">
-            <div class="son" id="mover">
-                <input type="button" class="move" id="left" onclick="move(1)" value="<"></input>
-            </div>
-            <div class="son" id="description">
-                <h1 class="title_project">GEOMÍDIA</h1> <br>
-                <p class="text_project">O Geomídia foi projetado para auxiliar alunos do ensino médio no estudo, voltado para o conteúdo sobre geopolítica global. Na forma de resumos de artigos científicos, portanto de fácil compreensão, com mapas e gráficos interativos gerados com dados oficiais.</p>
-            </div>
-            <div class="son" id="images">
-                <a href="https://geomidia.vercel.app"><img src="https://github.com/EduardoMoreaes/sobre-mim/blob/master/images/geomidia.vercel.app.png?raw=true" class="project"></a>
-                <br><a href="https://github.com/EduardoMoreaes/geomidia" class="github"> <img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" alt="" class="github">Github </a>
-            </div>
-            <div class="son" id="mover">
-                <input type="button" class="move" id="right" onclick="move(2)" value=">"></input>
-            </div>
+        <div class="points_programer-two_part">
+            <h1 class="title_text_programer">status</h1>
+            <table id="points_table-two_part">
+                <tr>
+                    <td id="col_one-two_part">
+                        <b>Nível:</b><br>
+                        <b>Desenvolvedor:</b><br>
+                        <b>Português:</b><br>
+                        <b>Inglês:</b><br>
+                        <b>Artes:</b><br>
+                        <b>Sociabilidade:</b><br>
+                        <b>Individualidade:</b><br>
+                        <b>Determinação:</b><br>
+                        <b>Disciplina:</b><br>
+                        <b>Ensino:</b><br>
+                    </td>
+                    <td id="col_two-two_part">
+                        <b>Full-Stack Júnior</b><br>
+                        <b>Web</b><br>
+                        <b>Nativo</b><br>
+                        <b>Intermediário</b><br>
+                        <b>Avançado</b><br>
+                        <b>Normal</b><br>
+                        <b>Normal</b><br>
+                        <b>Elevada</b><br>
+                        <b>Elevada</b><br>
+                        <b>Técnico</b><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-two_part">
+            <div class="background-rotate"></div>
+            <a href="./Pages/contact.html"><button>Contate-me</button></a>
+        </div>
+        <div class="name_programer-two_part">
+            <h1>EDUARDO L. MORAES</h1>
         </div>
     </div>
+    <div class="three_part_div">
+        <div class="title_projects-three_part">
+            <h1>Projetos</h1>
+        </div>
+        <div class="con">
+        <div class="description_project-three_part">
+            <h1 id="name_project">NAME PROJECT</h1>
+            <p id="text_project">text of project</p>
+        </div>
+        <div class="canvas_project-three_part">
+            <button class="next_project" id="next_pj_1" onclick="nextPJ();"></button>
+            <button class="next_project" id="next_pj_2" onclick="nextPJ();"></button>
+            <button class="next_project" id="next_pj_3" onclick="nextPJ();"></button>
+            <canvas id="canvas" class="canvas">
+                <img id="project_1" src="./images/geomidia.vercel.app.png"/>
+                <img id="project_2" src="./images/geomidia.vercel.app.png"/>
+                <img id="project_3" src="./images/geomidia.vercel.app.png"/>
+            </canvas>
+        </div>
+        </div>
     </div>
-    <div class="google_visible">
-        <p>JavaScript</p>
-        <p>HTML5</p>
-        <p>PostegreeSQL</p>
-        <p>CSS3</p>
-        <p>R</p>
-        <p>Desenvolvedor</p>
-        <p>NodeJS</p>
-        <p>TypeScript</p>
+    <div class="four_part_div">
+        <div class="title_events-four_part">
+            <h1>Sucessos</h1>
+        </div>
+        <table class="events">
+            <tr class="events_line">
+                <td class="events_col" id="img1">img</td>
+                <td class="events_col" id="img2">img</td>
+            </tr>
+            <tr class="events_line">
+                <td class="events_col" id="des1">Certificado de apresentação no ENCIF <br>Geomídia</td>
+                <td class="events_col" id="des2">Certificado de primeiro lugar no ENCIF <br>HANDSON</td>
+            </tr>
+        </table>
     </div>
 </body>
-<script src="./Script/001_page.js"></script>
-<script src="./Script/bootstrap.js"></script>
 </html>

@@ -1,0 +1,186 @@
+.two_part_div{
+    background-color: rgb(12, 12, 12);
+    height: 700px;
+    font-size: 50px;
+    background-image: linear-gradient(to bottom, black, rgb(26, 26, 126), rgb(1, 105, 105));
+}
+.title_programer-two_part{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: title 4s infinite;
+    margin-left: 13ch;
+    padding-top: 1ch;
+}
+@keyframes title {
+    0%{
+        text-shadow: 2px 2px rgb(252, 73, 103);
+    }
+    25%{
+        text-shadow: -2px 2px red;
+    }
+    50%{
+        text-shadow: -2px -2px rgb(88, 252, 73);
+    }
+    75%{
+        text-shadow: 2px -2px rgb(30, 30, 248);
+    }
+    100%{
+        text-shadow: 2px 2px pink;
+    }
+}
+
+.history_programer-two_part{
+    margin-left: 3ch;
+    margin-top: 10ch;
+}
+.title_text_programer{
+    text-align: center;
+    font-size: 42px;
+    color: rgb(255, 174, 0);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.programer-two_part{
+    margin-left: 16ch;
+    margin-top: -15.2ch;
+    height: 10ch;
+    background-image: url(https://sotecdi.com/web/wp-content/uploads/2019/08/programador.gif);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    background-position: 55% 5px;
+    background-size: 123%;
+
+    border-radius: 3em;
+    border:rgb(26, 26, 126) ridge;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+
+    box-shadow: 0em 0.1em rgb(11, 11, 58);
+}
+.languages_programer-two_part,.history_programer-two_part, .points_programer-two_part{
+    font-size: 20px;
+    width: 350px;
+    text-align: justify;
+    color: bisque; 
+}
+
+.languages_programer-two_part{
+    margin-top: -20em;
+}
+.points_programer-two_part, .languages_programer-two_part{
+    margin-left: 46em;
+}
+.points_programer-two_part{
+    margin-top: 5ch;
+}
+.name_programer-two_part{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-shadow: 2px 2px rgb(0, 190, 0),
+    -2px -2px rgb(0, 194, 0);
+    margin-top: -1.5ch;
+}
+#points_table-two_part{
+    border-radius: 15px;
+    margin-left: 0.5em;
+    background-color: rgba(161, 161, 161, 0.226);
+}
+#col_one-two_part{
+    color: orange;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 2ch;
+    padding-left: 0.4em;
+    border-right: 2px ridge  rgba(161, 161, 161, 0.486);
+}
+#col_two-two_part{
+    padding-right: 2ch;
+    padding-left: 5px;
+}
+button{
+    background-color: rgb(255, 219, 119);
+    height: 35px;
+    width: 100px;
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+    border-color: transparent;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    box-shadow: -2px 2px orangered,
+    2px -2px darkorange;
+    margin-left: 10%;
+    display: flex;
+    margin-top: -25px;
+    position: absolute;
+
+    transition: 1s;
+    animation: border-color 3s infinite;
+}
+@keyframes border-color {
+    25%{
+    box-shadow: -4px 4px rgb(172, 100, 7),
+    4px -4px darkred;
+    }
+    75%{
+
+    box-shadow: -4px 4px darkred,
+    4px -4px rgb(172, 100, 7);
+    }
+}
+button:hover{
+    animation: hover 1s forwards;
+}
+@keyframes hover {
+    0%{
+    }
+    50%{
+        box-shadow: -8px 8px orangered,
+        8px -8px darkorange;
+    }
+    100%{
+        box-shadow: -8px -8px orangered,
+        8px 8px darkorange;
+
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 5em;
+        border-bottom-right-radius: 5em;
+
+        font-size: 17px;
+        padding: 5px;
+    }
+}
+.background-rotate{
+    height: 20px;
+    width: 20px;
+    border-radius: 6px;
+
+    background-color: transparent;
+    display: flex;
+
+    position: inherit;
+    margin-left: 13%;
+    margin-top: 20px;
+    animation: rotation 6s infinite;
+    transition: 1s;
+}
+@keyframes rotation {
+    0%{
+        box-shadow: 1.4ch 0 yellow,
+        -1.4ch 0 purple;
+        transform: rotate(360deg);
+    }
+    50%{
+        box-shadow: 4ch 0 yellow,
+        -4ch 0 purple;
+    }
+    100%{
+        box-shadow: 1.4ch 0 yellow,
+        -1.4ch 0 purple;
+        transform: rotate(-360deg);
+    }
+}

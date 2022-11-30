@@ -1,0 +1,47 @@
+.four_part_div{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 60px;
+    align-items:center;
+    padding: 3em;
+    text-align: justify;
+    background-image: linear-gradient(to top, black, darkblue, blue, black);
+
+}
+.title_events-four_part{
+    text-align: center;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.events{
+    border: 1px solid black;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    border-radius: 30em;
+    padding: 1em;
+}
+.events_col{
+    text-align: center;
+    font-size: large;
+    width: 40em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: blanchedalmond;
+}
+.img_cert{
+    width: 100%;
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+}
+.events_col:hover{
+    animation: zoom 1s forwards;
+}
+@keyframes zoom {
+    100%{
+        width: 80em;
+    }
+}
